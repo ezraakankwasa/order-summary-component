@@ -1,0 +1,127 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  background-image: url("./images/pattern-background-mobile.svg");
+  background-size: cover;
+  background-color: hsl(225, 100%, 94%);
+  font-family: "Red Hat Display", sans-serif;
+  line-height: 1.6;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: hsl(224, 23%, 55%);
+}
+
+.card-img {
+  width: 100%;
+  border-top-left-radius: 19px;
+  border-top-right-radius: 19px;
+}
+
+/*======================
+typography
+=========================*/
+h1 {
+  margin-top: 0;
+  color: hsl(223, 47%, 23%);
+}
+
+p {
+  margin: 0;
+  font-weight: 500;
+}
+
+/*======================
+layout
+=========================*/
+
+.card {
+  background: #fff;
+  max-width: 350px;
+  width: 90%;
+  text-align: center;
+  border-radius: 20px;
+  transition: 256ms;
+}
+
+.card-body {
+  padding: 2em;
+}
+
+.card-payment-plan {
+  background: hsl(225, 100%, 98%);
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 1em;
+  margin: 2em 0;
+}
+
+.span-card-payment-plan {
+  display: block;
+  font-weight: 700;
+  color: hsl(223, 47%, 23%);
+}
+
+.card-payment-plan-link {
+  font-family: inherit;
+  font-weight: 700;
+}
+
+.card-payment-plan-link:focus,
+.card-payment-plan-link:hover {
+  text-decoration: none;
+}
+
+/*Buttons*/
+
+.btn {
+  font-family: inherit;
+  font-weight: 900;
+  letter-spacing: 0.5px;
+  display: block;
+  border: none;
+  cursor: pointer;
+  padding: 1em 0.5em;
+  margin: 0 auto;
+  width: 100%;
+  border-radius: 0.89em;
+}
+
+.btn-accentuated {
+  background: hsl(245, 75%, 52%);
+  color: #fff;
+  box-shadow: 0px 10px 15px 2px rgba(0, 0, 0, 0.2);
+}
+
+.btn-accentuated:focus,
+.btn-accentuated:hover {
+  transition: 256ms;
+  background: hsla(245, 75%, 52%, 0.6);
+  transform: scale(1.05);
+}
+
+.btn-plain {
+  background: none;
+  opacity: 60%;
+}
+
+.btn-plain:focus,
+.btn-plain:hover {
+  color: hsl(223, 47%, 23%);
+  opacity: 100%;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
